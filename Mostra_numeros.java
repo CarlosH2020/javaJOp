@@ -102,15 +102,16 @@ public class Mostra_numeros extends javax.swing.JFrame {
         String txt2 = jtxt2.getText();
         int i = Integer.parseInt(txt1);
         int j = Integer.parseInt(txt2);
-        String value = "," ;
+        String value = "";
         
         for(int x = i; x <= j; x++){
             if (x > i && x < j){
-                value = value + x;
+                value =  value + "," +x ;
+                
             }
             
         }
-        JOptionPane.showMessageDialog(rootPane,"Valores entre "+ i + " e " + j +": "+ value +"");
+        JOptionPane.showMessageDialog(rootPane,"Valores entre "+ i + " e " + j +":" + value);
        
     }//GEN-LAST:event_jbtActionPerformed
 
